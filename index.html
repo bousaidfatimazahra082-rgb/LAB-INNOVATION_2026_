@@ -15,8 +15,8 @@
         .text-bam-gold { color: #c5a059; }
         .hover-bam-gold:hover { background-color: #b08d46; }
         
-        /* Application de la police académique Times New Roman sur TOUT le site */
-        body, html, h1, h2, h3, h4, p, span, a, button, li {
+        /* Application stricte de la police académique Times New Roman partout */
+        body, html, h1, h2, h3, h4, p, span, a, button, li, input, textarea {
             font-family: 'Times New Roman', Times, serif !important;
         }
     </style>
@@ -26,9 +26,11 @@
     <!-- HEADER / NAVIGATION -->
     <header class="bg-bam-violet text-white sticky top-0 z-50 shadow-md">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-            <!-- Emplacement du logo Bank Al-Maghrib à l'en-tête (gauche) -->
-            <div class="flex items-center space-x-4">
-                <img src="https://raw.githubusercontent.com/bousaidfatimazahra082-rgb/lab-innovation-2026/main/image_c5a821.png" alt="Logo Bank Al-Maghrib" class="h-12 w-auto object-contain bg-white p-1 rounded">
+            <!-- LOGO BANK AL-MAGHRIB EN HAUT À GAUCHE -->
+            <div class="flex items-center space-x-3">
+                <div class="bg-white p-1 rounded flex items-center justify-center">
+                    <img src="https://www.bkam.ma/extension/bkam/design/bkam/images/logo_fr.png" alt="Logo Bank Al-Maghrib" class="h-10 w-auto object-contain">
+                </div>
                 <span class="font-bold text-lg tracking-wide hidden sm:inline">Lab Innovation</span>
             </div>
             <!-- Menu de navigation -->
@@ -50,7 +52,7 @@
 
     <!-- 1. HERO SECTION (Ambiance Bureau Professionnelle & Académique) -->
     <section id="accueil" class="relative bg-bam-violet text-white h-[85vh] flex items-center justify-center overflow-hidden">
-        <!-- Photo de professionnels en réunion dans un bureau (Exit la terre/l'espace) -->
+        <!-- Photo de professionnels en réunion dans un bureau moderne -->
         <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=2070')] bg-cover bg-center mix-blend-overlay"></div>
         <div class="relative max-w-4xl mx-auto text-center px-6">
             <span class="text-bam-gold uppercase tracking-widest font-bold text-sm bg-purple-950/60 px-4 py-2 rounded-full">Département Stratégie, Transformation & Innovation</span>
@@ -80,7 +82,7 @@
         </div>
     </section>
 
-    <!-- 3. NOUVEL ANGLE : PROJETS RÉALISÉS (Placé juste après À Propos) -->
+    <!-- 3. PROJETS RÉALISÉS (Placé juste après À Propos) -->
     <section id="projets" class="py-24 bg-gray-50 border-t border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-12">
@@ -169,7 +171,7 @@
         </div>
     </section>
 
-    <!-- 5. PARTENAIRES (Logos Forcés & Vérifiés) -->
+    <!-- 5. PARTENAIRES (Logos Officiels Publics) -->
     <section id="partenaires" class="py-20 bg-gray-50 border-t border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold text-bam-violet mb-12">Nos Partenaires Clés</h2>
@@ -177,17 +179,17 @@
                 <!-- Partenaire 1 : Bank Al-Maghrib -->
                 <div class="flex flex-col items-center space-y-3">
                     <div class="h-24 w-48 flex items-center justify-center bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
-                        <img src="https://raw.githubusercontent.com/bousaidfatimazahra082-rgb/lab-innovation-2026/main/image_c5a821.png" alt="Logo BAM" class="h-16 w-auto object-contain">
+                        <img src="https://www.bkam.ma/extension/bkam/design/bkam/images/logo_fr.png" alt="Logo Bank Al-Maghrib" class="h-14 w-auto object-contain">
                     </div>
                     <span class="text-base font-bold text-gray-700">Bank Al-Maghrib</span>
                 </div>
                 
-                <!-- Partenaire 2 : Morocco Fintech Center -->
+                <!-- Partenaire 2 : Morocco Fintech Center / CNDP / One Stop Shop -->
                 <div class="flex flex-col items-center space-y-3">
                     <div class="h-24 w-48 flex items-center justify-center bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
-                        <img src="https://raw.githubusercontent.com/bousaidfatimazahra082-rgb/lab-innovation-2026/main/image_c5a4a3.png" alt="Logo Morocco Fintech Center" class="h-16 w-auto object-contain">
+                        <img src="https://www.cndp.ma/wp-content/uploads/2023/11/logo-cndp-1.png" alt="Logo Partenaire FinTech" class="h-14 w-auto object-contain">
                     </div>
-                    <span class="text-base font-bold text-gray-700">Morocco Fintech Center</span>
+                    <span class="text-base font-bold text-gray-700">Espace FinTech</span>
                 </div>
 
                 <!-- Partenaire 3 : Institutions Nationales -->
