@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab Innovation - Bank Al-Maghrib</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        /* Couleurs officielles Bank Al-Maghrib */
         .bg-bam-violet { background-color: #2e1547; }
         .text-bam-violet { color: #2e1547; }
         .border-bam-violet { border-color: #2e1547; }
@@ -15,7 +13,6 @@
         .text-bam-gold { color: #c5a059; }
         .hover-bam-gold:hover { background-color: #b08d46; }
         
-        /* Application de la police Times New Roman */
         body, html, h1, h2, h3, h4, p, span, a, button, li, input, textarea {
             font-family: 'Times New Roman', Times, serif !important;
         }
@@ -26,24 +23,21 @@
     <!-- HEADER / NAVIGATION -->
     <header class="bg-bam-violet text-white sticky top-0 z-50 shadow-md">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-            <!-- LOGO EN HAUT À GAUCHE (Utilise ton fichier GitHub local) -->
             <div class="flex items-center space-x-3">
                 <div class="bg-white p-1 rounded flex items-center justify-center">
                     <img src="logo_bam.png" alt="Logo Bank Al-Maghrib" class="h-10 w-auto object-contain">
                 </div>
                 <span class="font-bold text-lg tracking-wide hidden sm:inline" data-lang-fr="Lab Innovation" data-lang-en="Innovation Lab">Lab Innovation</span>
             </div>
-            <!-- Menu de navigation réordonné selon tes instructions -->
             <nav class="hidden md:flex space-x-6 text-base font-medium">
                 <a href="#accueil" class="hover:text-bam-gold transition-colors" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a>
                 <a href="#apropos" class="hover:text-bam-gold transition-colors" data-lang-fr="À propos" data-lang-en="About">À propos</a>
                 <a href="#missions" class="hover:text-bam-gold transition-colors" data-lang-fr="Missions & Objectifs" data-lang-en="Missions & Objectives">Missions & Objectifs</a>
-                <a href="#experimentations" class="hover:text-bam-gold transition-colors" data-lang-fr="Expérimentations réalisées" data-lang-en="Experiments">Expérimentations réalisées</a>
+                <a href="#projets" class="hover:text-bam-gold transition-colors" data-lang-fr="Expérimentations" data-lang-en="Experimentations">Expérimentations</a>
                 <a href="#partenaires" class="hover:text-bam-gold transition-colors" data-lang-fr="Partenaires" data-lang-en="Partners">Partenaires</a>
                 <a href="#evenements" class="hover:text-bam-gold transition-colors" data-lang-fr="Événements" data-lang-en="Events">Événements</a>
                 <a href="#contact" class="hover:text-bam-gold transition-colors" data-lang-fr="Contact" data-lang-en="Contact">Contact</a>
             </nav>
-            <!-- Sélecteur de langue -->
             <div>
                 <button id="langBtn" onclick="toggleLanguage()" class="border border-bam-gold text-bam-gold px-3 py-1 rounded text-sm uppercase font-semibold hover:bg-bam-gold hover:text-white transition-all cursor-pointer">
                     EN
@@ -52,14 +46,14 @@
         </div>
     </header>
 
-    <!-- 1. HERO SECTION (Phrase modifiée et corrigée) -->
+    <!-- 1. HERO SECTION -->
     <section id="accueil" class="relative bg-bam-violet text-white h-[85vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=2070')] bg-cover bg-center mix-blend-overlay"></div>
         <div class="relative max-w-4xl mx-auto text-center px-6">
             <span class="text-bam-gold uppercase tracking-widest font-bold text-sm bg-purple-950/60 px-4 py-2 rounded-full" data-lang-fr="Département Stratégie, Transformation & Innovation" data-lang-en="Strategy, Transformation & Innovation Department">Département Stratégie, Transformation & Innovation</span>
             <h1 class="text-4xl md:text-6xl font-bold mt-6 mb-6 leading-tight" data-lang-fr="Lab Innovation <br><span class='text-bam-gold'>Bank Al-Maghrib</span>" data-lang-en="Innovation Lab <br><span class='text-bam-gold'>Bank Al-Maghrib</span>">Lab Innovation <br><span class="text-bam-gold">Bank Al-Maghrib</span></h1>
-            <p class="text-xl text-gray-200 max-w-2xl mx-auto font-light leading-relaxed" data-lang-fr="Accompagner l’innovation au sein de la Banque à travers des expérimentations, collaborations et des technologies émergentes." data-lang-en="Supporting innovation within the Bank through experimentation, collaboration, and emerging technologies.">
-                Accompagner l’innovation au sein de la Banque à travers des expérimentations, collaborations et des technologies émergentes.
+            <p class="text-xl text-gray-200 max-w-2xl mx-auto font-light leading-relaxed" data-lang-fr="Accompagner l'innovation au sein de la Banque à travers des expérimentations, la collaboration et des technologies émergentes." data-lang-en="Supporting innovation within the Bank through experimentation, collaboration, and emerging technologies.">
+                Accompagner l'innovation au sein de la Banque à travers des expérimentations, la collaboration et des technologies émergentes.
             </p>
             <div class="mt-10">
                 <a href="#apropos" class="bg-bam-gold text-white font-medium px-8 py-3.5 rounded-lg shadow-lg hover-bam-gold transition-all inline-block text-lg" data-lang-fr="Découvrir le Lab" data-lang-en="Discover the Lab">Découvrir le Lab</a>
@@ -67,32 +61,200 @@
         </div>
     </section>
 
-    <!-- 2. À PROPOS DU LAB (Mot 'promouvant' corrigé) -->
+    <!-- 2. À PROPOS DU LAB -->
     <section id="apropos" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-10">
                 <h2 class="text-3xl font-bold text-bam-violet" data-lang-fr="À Propos du Lab" data-lang-en="About the Lab">À Propos du Lab</h2>
                 <div class="w-16 h-1 bg-bam-gold mx-auto mt-4"></div>
             </div>
-            
-            <div class="max-w-4xl mx-auto text-center text-xl text-gray-700 leading-relaxed mb-6 text-justify md:text-center" data-lang-fr="Le Lab Innovation de Bank Al-Maghrib est une structure dédiée à l’identification, à l’expérimentation et au pilotage des projets innovants de la Banque. Il accompagne la transformation digitale en explorant les nouvelles technologies, en développant des partenariats avec l’écosystème de l’innovation et en promouvant les méthodes de travail agiles et innovantes. Il joue un rôle essentiel dans la modernisation des activités de la Banque en favorisant l’émergence de solutions innovantes, en encourageant la culture de l’innovation et en contribuant à l’amélioration continue des services, des processus et de l’efficacité opérationnelle." data-lang-en="The Innovation Lab of Bank Al-Maghrib is a structure dedicated to identifying, experimenting, and steering the Bank's innovative projects. It supports digital transformation by exploring new technologies, developing partnerships with the innovation ecosystem, and promoting agile and innovative working methodologies. It plays an essential role in modernizing the Bank's activities by fostering the emergence of innovative solutions, encouraging a culture of innovation, and contributing to the continuous improvement of services, processes, and operational efficiency.">
-                Le Lab Innovation de Bank Al-Maghrib est une structure dédiée à l’identification, à l’expérimentation et au pilotage des projets innovants de la Banque. Il accompagne la transformation digitale en explorant les nouvelles technologies, en développant des partenariats avec l’écosystème de l’innovation et en promouvant les méthodes de travail agiles et innovantes. Il joue un rôle essentiel dans la modernisation des activités de la Banque en favorisant l’émergence de solutions innovantes, en encouraging la culture de l’innovation et en contribuant à l’amélioration continue des services, des processus et de l’efficacité opérationnelle.
+            <div class="max-w-4xl mx-auto text-center text-xl text-gray-700 leading-relaxed mb-6 text-justify md:text-center" data-lang-fr="Le Lab Innovation de Bank Al-Maghrib est une structure dédiée à l'identification, à l'expérimentation et au pilotage des projets innovants de la Banque. Il accompagne la transformation digitale en explorant les nouvelles technologies, en développant des partenariats avec l'écosystème de l'innovation et en promouvant les méthodes de travail agiles et innovantes. Il joue un rôle essentiel dans la modernisation des activités de la Banque en favorisant l'émergence de solutions innovantes, en encourageant la culture de l'innovation et en contribuant à l'amélioration continue des services, des processus et de l'efficacité opérationnelle." data-lang-en="The Innovation Lab of Bank Al-Maghrib is a structure dedicated to identifying, experimenting, and steering the Bank's innovative projects. It supports digital transformation by exploring new technologies, developing partnerships with the innovation ecosystem, and promoting agile and innovative working methodologies. It plays an essential role in modernizing the Bank's activities by fostering the emergence of innovative solutions, encouraging a culture of innovation, and contributing to the continuous improvement of services, processes, and operational efficiency.">
+                Le Lab Innovation de Bank Al-Maghrib est une structure dédiée à l'identification, à l'expérimentation et au pilotage des projets innovants de la Banque. Il accompagne la transformation digitale en explorant les nouvelles technologies, en développant des partenariats avec l'écosystème de l'innovation et en promouvant les méthodes de travail agiles et innovantes. Il joue un rôle essentiel dans la modernisation des activités de la Banque en favorisant l'émergence de solutions innovantes, en encourageant la culture de l'innovation et en contribuant à l'amélioration continue des services, des processus et de l'efficacité opérationnelle.
             </div>
         </div>
     </section>
 
-    <!-- 3. MISSIONS & OBJECTIFS (Placé avant les expérimentations) -->
-    <section id="missions" class="py-24 bg-gray-50 border-t border-b border-gray-200">
+    <!-- 3. MISSIONS & OBJECTIFS -->
+    <section id="missions" class="py-24 bg-white border-t border-gray-200">
         <div class="max-w-5xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-bold text-bam-violet" data-lang-fr="Missions & Objectifs" data-lang-en="Missions & Objectives">Missions & Objectifs</h2>
                 <div class="w-16 h-1 bg-bam-gold mx-auto mt-4"></div>
             </div>
-
-            <!-- Mission -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 mb-12">
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-200 mb-12">
                 <h3 class="text-2xl font-bold text-bam-violet mb-4 flex items-center">
                     <span class="w-2 h-6 bg-bam-gold inline-block mr-3 rounded"></span>Notre Mission Principale
                 </h3>
-                <p class="text-gray-700 text-lg leading-relaxed text-justify" data-lang-fr="Le LAB innovation de Bank Al-Maghrib a pour mission d’identifier et piloter les projets d’innovation de la Banque et d’expérimenter notamment l’usage des nouvelles technologies en response à des besoins métiers en faisant appel à des acteurs innovants, de développer des partenariats avec les acteurs de l’innovation et de promouvoir l’adoption des démarches agiles et innovantes." data-lang-en="The innovation LAB of Bank Al-Maghrib aims to identify and steer the Bank's innovation projects and experiment notably with the use of new technologies in response to business needs by involving innovative actors, to develop partnerships with innovation stakeholders, and to promote the adoption of agile and innovative approaches.">
-                    Le LAB innovation de Bank Al-Maghrib a pour mission d’identifier et piloter les projets d’innovation de la Banque et d’expérimenter notamment l’usage des nouvelles technologies en réponse à des besoins métiers en faisant appel à des acteurs innovants, de développer des partenariats avec les acteurs de l’Normally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
+                <p class="text-gray-700 text-lg leading-relaxed text-justify" data-lang-fr="Le LAB innovation de Bank Al-Maghrib a pour mission d'identifier et piloter les projets d'innovation de la Banque et d'expérimenter notamment l'usage des nouvelles technologies en réponse à des besoins métiers en faisant appel à des acteurs innovants, de développer des partenariats avec les acteurs de l'innovation et de promouvoir l'adoption des démarches agiles et innovantes." data-lang-en="The innovation LAB of Bank Al-Maghrib aims to identify and steer the Bank's innovation projects and experiment notably with the use of new technologies in response to business needs by involving innovative actors, to develop partnerships with innovation stakeholders, and to promote the adoption of agile and innovative approaches.">
+                    Le LAB innovation de Bank Al-Maghrib a pour mission d'identifier et piloter les projets d'innovation de la Banque et d'expérimenter notamment l'usage des nouvelles technologies en réponse à des besoins métiers en faisant appel à des acteurs innovants, de développer des partenariats avec les acteurs de l'innovation et de promouvoir l'adoption des démarches agiles et innovantes.
+                </p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-200">
+                <h3 class="text-2xl font-bold text-bam-violet mb-6 flex items-center">
+                    <span class="w-2 h-6 bg-bam-violet inline-block mr-3 rounded"></span>Objectifs du Lab Innovation
+                </h3>
+                <ul class="grid sm:grid-cols-2 gap-4 text-gray-700 text-lg">
+                    <li class="flex items-start space-x-2"><span class="text-bam-gold font-bold">•</span><span data-lang-fr="Promouvoir l'innovation au sein de Bank Al-Maghrib." data-lang-en="Promote innovation within Bank Al-Maghrib.">Promouvoir l'innovation au sein de Bank Al-Maghrib.</span></li>
+                    <li class="flex items-start space-x-2"><span class="text-bam-gold font-bold">•</span><span data-lang-fr="Identifier et expérimenter les nouvelles technologies à fort potentiel." data-lang-en="Identify and experiment with high-potential new technologies.">Identifier et expérimenter les nouvelles technologies à fort potentiel.</span></li>
+                    <li class="flex items-start space-x-2"><span class="text-bam-gold font-bold">•</span><span data-lang-fr="Accompagner la transformation digitale des métiers de la Banque." data-lang-en="Support the digital transformation of the Bank's business lines.">Accompagner la transformation digitale des métiers de la Banque.</span></li>
+                    <li class="flex items-start space-x-2"><span class="text-bam-gold font-bold">•</span><span data-lang-fr="Développer des solutions innovantes pour améliorer les processus et les services." data-lang-en="Develop innovative solutions to improve processes and services.">Développer des solutions innovantes pour améliorer les processus et les services.</span></li>
+                    <li class="flex items-start space-x-2"><span class="text-bam-gold font-bold">•</span><span data-lang-fr="Encourager la collaboration avec les fintechs, startups, universités et autres acteurs." data-lang-en="Encourage collaboration with fintechs, startups, universities, and other actors.">Encourager la collaboration avec les fintechs, startups, universités et autres acteurs.</span></li>
+                    <li class="flex items-start space-x-2"><span class="text-bam-gold font-bold">•</span><span data-lang-fr="Diffuser une culture d'innovation et des méthodes agiles au sein de l'organisation." data-lang-en="Disseminate an innovation culture and agile methods within the organization.">Diffuser une culture d'innovation et des méthodes agiles au sein de l'organisation.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. EXPÉRIMENTATIONS RÉALISÉES -->
+    <section id="projets" class="py-24 bg-gray-50 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-bam-violet" data-lang-fr="Expérimentations Réalisées" data-lang-en="Completed Experimentations">Expérimentations Réalisées</h2>
+                <div class="w-16 h-1 bg-bam-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-8 rounded-xl border-t-4 border-bam-violet shadow-sm">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center text-bam-violet font-bold text-lg mb-4">01</div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3" data-lang-fr="Veille réglementaire et élaboration des textes réglementaires" data-lang-en="Regulatory Watch and Drafting of Regulatory Texts">Veille réglementaire et élaboration des textes réglementaires</h4>
+                    <p class="text-base text-gray-600 leading-relaxed" data-lang-fr="Mise en place d'une plateforme permettant de centraliser la veille, de traduire les contenus et d'appuyer la rédaction réglementaire." data-lang-en="Implementation of a platform to centralize regulatory watch, translate content, and support the drafting of regulatory texts.">Mise en place d'une plateforme permettant de centraliser la veille, de traduire les contenus et d'appuyer la rédaction réglementaire.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border-t-4 border-bam-gold shadow-sm">
+                    <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center text-bam-gold font-bold text-lg mb-4">02</div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3" data-lang-fr="Portail IA Gen-LIA" data-lang-en="Gen-LIA AI Portal">Portail IA Gen-LIA</h4>
+                    <p class="text-base text-gray-600 leading-relaxed" data-lang-fr="Développement d'un assistant IA sécurisé, conçu pour accompagner les utilisateurs dans un environnement d'expérimentation contrôlé." data-lang-en="Development of a secure AI assistant designed to support users in a controlled experimentation environment.">Développement d'un assistant IA sécurisé, conçu pour accompagner les utilisateurs dans un environnement d'expérimentation contrôlé.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border-t-4 border-bam-violet shadow-sm">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center text-bam-violet font-bold text-lg mb-4">03</div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3" data-lang-fr="Cryptographie post-quantique" data-lang-en="Post-Quantum Cryptography">Cryptographie post-quantique</h4>
+                    <p class="text-base text-gray-600 leading-relaxed" data-lang-fr="Analyse des algorithmes de cryptographie post-quantique afin d'anticiper les futurs besoins de sécurisation et de migration technologique de la Banque." data-lang-en="Analysis of post-quantum cryptography algorithms to anticipate the Bank's future security and technological migration needs.">Analyse des algorithmes de cryptographie post-quantique afin d'anticiper les futurs besoins de sécurisation et de migration technologique de la Banque.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PARTENAIRES -->
+    <section id="partenaires" class="py-20 bg-gray-50 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-bam-violet mb-12" data-lang-fr="Nos Partenaires Clés" data-lang-en="Our Key Partners">Nos Partenaires Clés</h2>
+            <div class="flex flex-wrap justify-center items-center gap-16">
+                <div class="flex flex-col items-center space-y-3">
+                    <div class="h-24 w-48 flex items-center justify-center bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+                        <img src="logo_bam.png" alt="Logo Bank Al-Maghrib" class="h-14 w-auto object-contain">
+                    </div>
+                    <span class="text-base font-bold text-gray-700">Bank Al-Maghrib</span>
+                </div>
+                <div class="flex flex-col items-center space-y-3">
+                    <div class="h-24 w-48 flex items-center justify-center bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+                        <img src="logo_fintech.png" alt="Logo FinTech" class="h-14 w-auto object-contain">
+                    </div>
+                    <span class="text-base font-bold text-gray-700">Morocco Fintech Center</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. ÉVÉNEMENTS -->
+    <section id="evenements" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-bam-violet" data-lang-fr="Actualités & Événements" data-lang-en="News & Events">Actualités & Événements</h2>
+                <div class="w-16 h-1 bg-bam-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm border border-gray-200">
+                    <div class="h-48 bg-[url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=600')] bg-cover bg-center"></div>
+                    <div class="p-6">
+                        <span class="text-sm text-bam-gold font-bold uppercase tracking-wider" data-lang-fr="Rencontres" data-lang-en="Meetings">Rencontres</span>
+                        <h4 class="font-bold text-xl text-gray-900 mt-2 mb-3" data-lang-fr="Les Rendez-vous du Lab" data-lang-en="Lab Meetings">Les Rendez-vous du Lab</h4>
+                        <p class="text-base text-gray-600" data-lang-fr="Organisation de rencontres et d'échanges visant à promouvoir l'innovation, partager les retours d'expérience et sensibiliser aux nouvelles tendances technologiques." data-lang-en="Organization of meetings and exchanges aimed at promoting innovation, sharing feedback, and raising awareness of new technological trends.">Organisation de rencontres et d'échanges visant à promouvoir l'innovation, partager les retours d'expérience et sensibiliser aux nouvelles tendances technologiques.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm border border-gray-200">
+                    <div class="h-48 bg-[url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=600')] bg-cover bg-center"></div>
+                    <div class="p-6">
+                        <span class="text-sm text-bam-gold font-bold uppercase tracking-wider" data-lang-fr="Événement" data-lang-en="Event">Événement</span>
+                        <h4 class="font-bold text-xl text-gray-900 mt-2 mb-3" data-lang-fr="Visa Fintech Day" data-lang-en="Visa Fintech Day">Visa Fintech Day</h4>
+                        <p class="text-base text-gray-600" data-lang-fr="Participation à un événement dédié à l'écosystème fintech afin d'explorer les innovations financières et de renforcer les opportunités de collaboration avec les acteurs du secteur." data-lang-en="Participation in an event dedicated to the fintech ecosystem to explore financial innovations and strengthen collaboration opportunities with sector players.">Participation à un événement dédié à l'écosystème fintech afin d'explorer les innovations financières et de renforcer les opportunités de collaboration avec les acteurs du secteur.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm border border-gray-200">
+                    <div class="h-48 bg-[url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=600')] bg-cover bg-center"></div>
+                    <div class="p-6">
+                        <span class="text-sm text-bam-gold font-bold uppercase tracking-wider" data-lang-fr="Formation" data-lang-en="Training">Formation</span>
+                        <h4 class="font-bold text-xl text-gray-900 mt-2 mb-3" data-lang-fr="Sessions d'acculturation" data-lang-en="Acculturation Sessions">Sessions d'acculturation</h4>
+                        <p class="text-base text-gray-600" data-lang-fr="Animation de sessions de sensibilisation permettant de familiariser les collaborateurs aux nouvelles technologies, à l'innovation et aux enjeux de la transformation digitale." data-lang-en="Facilitation of awareness sessions to familiarize employees with new technologies, innovation, and the challenges of digital transformation.">Animation de sessions de sensibilisation permettant de familiariser les collaborateurs aux nouvelles technologies, à l'innovation et aux enjeux de la transformation digitale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CONTACT -->
+    <section id="contact" class="py-24 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-3xl font-bold text-bam-violet mb-6" data-lang-fr="Nous Contacter" data-lang-en="Contact Us">Nous Contacter</h3>
+                    <p class="text-gray-600 mb-8 text-base leading-relaxed" data-lang-fr="Prenez contact avec l'équipe du Lab Innovation." data-lang-en="Get in touch with the Innovation Lab team.">Prenez contact avec l'équipe du Lab Innovation.</p>
+                    <div class="space-y-4 text-base text-gray-700 mb-8">
+                        <div><span class="font-bold text-bam-gold" data-lang-fr="Adresse :" data-lang-en="Address:">Adresse :</span> <span>Bank Al-Maghrib, Annexe à Hay Riad, Rabat</span></div>
+                        <div><span class="font-bold text-bam-gold">Email :</span> <span>labinnovation@bkam.ma</span></div>
+                    </div>
+                    <div class="relative w-full h-64 rounded-xl overflow-hidden border border-gray-300 shadow-sm group">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.270921473138!2d-6.871587823432773!3d33.96053347319159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76ce61661601b%3A0x2a0462967119e7cf!2sBank%20Al-Maghrib!5e0!3m2!1sfr!2sma!4v1710000000000!5m2!1sfr!2sma" 
+                            class="w-full h-full border-0" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                        <div class="absolute bottom-3 left-3">
+                            <a href="https://maps.app.goo.gl/da76ce61661601b" target="_blank" class="bg-white text-gray-800 text-sm font-bold px-3 py-2 rounded shadow-md flex items-center space-x-1 border border-gray-200 hover:bg-bam-gold hover:text-white transition-colors cursor-pointer">
+                                <span data-lang-fr="Ouvrir dans Maps" data-lang-en="Open in Maps">Ouvrir dans Maps</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
+                    <h4 class="font-bold text-xl text-bam-violet mb-4" data-lang-fr="Restez informé" data-lang-en="Stay informed">Restez informé</h4>
+                    <form action="https://formspree.io/f/REMPLACE_AVEC_TON_ID_SECRET" method="POST" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-600 uppercase mb-2" data-lang-fr="NOM COMPLET" data-lang-en="FULL NAME">NOM COMPLET</label>
+                            <input type="text" name="name" placeholder="Votre nom" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-base focus:outline-none focus:border-bam-violet bg-gray-50" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-600 uppercase mb-2" data-lang-fr="ADRESSE EMAIL" data-lang-en="EMAIL ADDRESS">ADRESSE EMAIL</label>
+                            <input type="email" name="email" placeholder="adresse@institution.ma" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-base focus:outline-none focus:border-bam-violet bg-gray-50" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-600 uppercase mb-2" data-lang-fr="MESSAGE / INTÉRÊT POUR LA NEWSLETTER" data-lang-en="MESSAGE / INTEREST FOR THE NEWSLETTER">MESSAGE / INTÉRÊT POUR LA NEWSLETTER</label>
+                            <textarea name="message" rows="3" placeholder="Votre message ou demande d'inscription..." class="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-base focus:outline-none focus:border-bam-violet bg-gray-50" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-bam-violet text-white text-base font-bold py-3 rounded-lg shadow hover:bg-opacity-95 transition-all cursor-pointer" data-lang-fr="Envoyer la demande" data-lang-en="Submit request">Envoyer la demande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-bam-violet text-gray-400 py-8 border-t border-purple-950 text-center text-sm">
+        <p>&copy; 2026 Bank Al-Maghrib - Département Stratégie, Transformation & Innovation. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        let currentLang = 'fr';
+        function toggleLanguage() {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            document.getElementById('langBtn').innerText = currentLang === 'fr' ? 'EN' : 'FR';
+            document.querySelectorAll('[data-lang-fr]').forEach(el => {
+                if (currentLang === 'fr') {
+                    el.innerHTML = el.getAttribute('data-lang-fr');
+                } else {
+                    el.innerHTML = el.getAttribute('data-lang-en');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
