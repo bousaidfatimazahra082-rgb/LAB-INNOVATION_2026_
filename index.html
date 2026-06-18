@@ -6,6 +6,7 @@
     <title>Lab Innovation - Bank Al-Maghrib</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
+        /* Couleurs officielles Bank Al-Maghrib */
         .bg-bam-violet { background-color: #2e1547; }
         .text-bam-violet { color: #2e1547; }
         .border-bam-violet { border-color: #2e1547; }
@@ -13,6 +14,7 @@
         .text-bam-gold { color: #c5a059; }
         .hover-bam-gold:hover { background-color: #b08d46; }
         
+        /* Application de la police Times New Roman */
         body, html, h1, h2, h3, h4, p, span, a, button, li, input, textarea {
             font-family: 'Times New Roman', Times, serif !important;
         }
@@ -20,7 +22,6 @@
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
 
-    <!-- HEADER / NAVIGATION -->
     <header class="bg-bam-violet text-white sticky top-0 z-50 shadow-md">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-3">
@@ -33,8 +34,8 @@
                 <a href="#accueil" class="hover:text-bam-gold transition-colors" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a>
                 <a href="#apropos" class="hover:text-bam-gold transition-colors" data-lang-fr="À propos" data-lang-en="About">À propos</a>
                 <a href="#missions" class="hover:text-bam-gold transition-colors" data-lang-fr="Missions & Objectifs" data-lang-en="Missions & Objectives">Missions & Objectifs</a>
-                <a href="#projets" class="hover:text-bam-gold transition-colors" data-lang-fr="Expérimentations" data-lang-en="Experimentations">Expérimentations</a>
-                <a href="#partenaires" class="hover:text-bam-gold transition-colors" data-lang-fr="Partenaires" data-lang-en="Partners">Partenaires</a>
+                <a href="#experimentations" class="hover:text-bam-gold transition-colors" data-lang-fr="Expérimentations réalisées" data-lang-en="Experiments">Expérimentations réalisées</a>
+                <a href="#veille" class="hover:text-bam-gold transition-colors" data-lang-fr="La veille" data-lang-en="Technology Watch">La veille</a>
                 <a href="#evenements" class="hover:text-bam-gold transition-colors" data-lang-fr="Événements" data-lang-en="Events">Événements</a>
                 <a href="#contact" class="hover:text-bam-gold transition-colors" data-lang-fr="Contact" data-lang-en="Contact">Contact</a>
             </nav>
@@ -46,7 +47,6 @@
         </div>
     </header>
 
-    <!-- 1. HERO SECTION -->
     <section id="accueil" class="relative bg-bam-violet text-white h-[85vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=2070')] bg-cover bg-center mix-blend-overlay"></div>
         <div class="relative max-w-4xl mx-auto text-center px-6">
@@ -61,7 +61,6 @@
         </div>
     </section>
 
-    <!-- 2. À PROPOS DU LAB -->
     <section id="apropos" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-10">
@@ -74,14 +73,13 @@
         </div>
     </section>
 
-    <!-- 3. MISSIONS & OBJECTIFS -->
-    <section id="missions" class="py-24 bg-white border-t border-gray-200">
+    <section id="missions" class="py-24 bg-gray-50 border-t border-b border-gray-200">
         <div class="max-w-5xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-bold text-bam-violet" data-lang-fr="Missions & Objectifs" data-lang-en="Missions & Objectives">Missions & Objectifs</h2>
                 <div class="w-16 h-1 bg-bam-gold mx-auto mt-4"></div>
             </div>
-            <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-200 mb-12">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 mb-12">
                 <h3 class="text-2xl font-bold text-bam-violet mb-4 flex items-center">
                     <span class="w-2 h-6 bg-bam-gold inline-block mr-3 rounded"></span>Notre Mission Principale
                 </h3>
@@ -89,7 +87,7 @@
                     Le LAB innovation de Bank Al-Maghrib a pour mission d'identifier et piloter les projets d'innovation de la Banque et d'expérimenter notamment l'usage des nouvelles technologies en réponse à des besoins métiers en faisant appel à des acteurs innovants, de développer des partenariats avec les acteurs de l'innovation et de promouvoir l'adoption des démarches agiles et innovantes.
                 </p>
             </div>
-            <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-200">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
                 <h3 class="text-2xl font-bold text-bam-violet mb-6 flex items-center">
                     <span class="w-2 h-6 bg-bam-violet inline-block mr-3 rounded"></span>Objectifs du Lab Innovation
                 </h3>
@@ -105,25 +103,24 @@
         </div>
     </section>
 
-    <!-- 4. EXPÉRIMENTATIONS RÉALISÉES -->
-    <section id="projets" class="py-24 bg-gray-50 border-t border-b border-gray-200">
+    <section id="experimentations" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-12">
                 <h2 class="text-3xl font-bold text-bam-violet" data-lang-fr="Expérimentations Réalisées" data-lang-en="Completed Experimentations">Expérimentations Réalisées</h2>
                 <div class="w-16 h-1 bg-bam-gold mx-auto mt-4"></div>
             </div>
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-white p-8 rounded-xl border-t-4 border-bam-violet shadow-sm">
+                <div class="bg-gray-50 p-8 rounded-xl border-t-4 border-bam-violet shadow-sm">
                     <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center text-bam-violet font-bold text-lg mb-4">01</div>
                     <h4 class="font-bold text-xl text-gray-900 mb-3" data-lang-fr="Veille réglementaire et élaboration des textes réglementaires" data-lang-en="Regulatory Watch and Drafting of Regulatory Texts">Veille réglementaire et élaboration des textes réglementaires</h4>
                     <p class="text-base text-gray-600 leading-relaxed" data-lang-fr="Mise en place d'une plateforme permettant de centraliser la veille, de traduire les contenus et d'appuyer la rédaction réglementaire." data-lang-en="Implementation of a platform to centralize regulatory watch, translate content, and support the drafting of regulatory texts.">Mise en place d'une plateforme permettant de centraliser la veille, de traduire les contenus et d'appuyer la rédaction réglementaire.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl border-t-4 border-bam-gold shadow-sm">
+                <div class="bg-gray-50 p-8 rounded-xl border-t-4 border-bam-gold shadow-sm">
                     <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center text-bam-gold font-bold text-lg mb-4">02</div>
                     <h4 class="font-bold text-xl text-gray-900 mb-3" data-lang-fr="Portail IA Gen-LIA" data-lang-en="Gen-LIA AI Portal">Portail IA Gen-LIA</h4>
                     <p class="text-base text-gray-600 leading-relaxed" data-lang-fr="Développement d'un assistant IA sécurisé, conçu pour accompagner les utilisateurs dans un environnement d'expérimentation contrôlé." data-lang-en="Development of a secure AI assistant designed to support users in a controlled experimentation environment.">Développement d'un assistant IA sécurisé, conçu pour accompagner les utilisateurs dans un environnement d'expérimentation contrôlé.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl border-t-4 border-bam-violet shadow-sm">
+                <div class="bg-gray-50 p-8 rounded-xl border-t-4 border-bam-violet shadow-sm">
                     <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center text-bam-violet font-bold text-lg mb-4">03</div>
                     <h4 class="font-bold text-xl text-gray-900 mb-3" data-lang-fr="Cryptographie post-quantique" data-lang-en="Post-Quantum Cryptography">Cryptographie post-quantique</h4>
                     <p class="text-base text-gray-600 leading-relaxed" data-lang-fr="Analyse des algorithmes de cryptographie post-quantique afin d'anticiper les futurs besoins de sécurisation et de migration technologique de la Banque." data-lang-en="Analysis of post-quantum cryptography algorithms to anticipate the Bank's future security and technological migration needs.">Analyse des algorithmes de cryptographie post-quantique afin d'anticiper les futurs besoins de sécurisation et de migration technologique de la Banque.</p>
@@ -132,28 +129,38 @@
         </div>
     </section>
 
-    <!-- 5. PARTENAIRES -->
-    <section id="partenaires" class="py-20 bg-gray-50 border-t border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold text-bam-violet mb-12" data-lang-fr="Nos Partenaires Clés" data-lang-en="Our Key Partners">Nos Partenaires Clés</h2>
-            <div class="flex flex-wrap justify-center items-center gap-16">
-                <div class="flex flex-col items-center space-y-3">
-                    <div class="h-24 w-48 flex items-center justify-center bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
-                        <img src="logo_bam.png" alt="Logo Bank Al-Maghrib" class="h-14 w-auto object-contain">
+    <section id="veille" class="py-24 bg-gray-50 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-bam-violet" data-lang-fr="La Veille Technologique" data-lang-en="Technology Watch">La Veille Technologique</h2>
+                <div class="w-16 h-1 bg-bam-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-8 h-8 bg-purple-100 rounded-md flex items-center justify-center text-bam-violet font-bold text-sm mb-3">A</div>
+                        <h4 class="font-bold text-lg text-gray-900 mb-2" data-lang-fr="Tendances Émergentes" data-lang-en="Emerging Trends">Tendances Émergentes</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed" data-lang-fr="Suivi constant et analyse des nouvelles avancées technologiques applicables au secteur bancaire." data-lang-en="Constant monitoring and analysis of new technological breakthroughs applicable to the banking sector.">Suivi constant et analyse des nouvelles avancées technologiques applicables au secteur bancaire.</p>
                     </div>
-                    <span class="text-base font-bold text-gray-700">Bank Al-Maghrib</span>
                 </div>
-                <div class="flex flex-col items-center space-y-3">
-                    <div class="h-24 w-48 flex items-center justify-center bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
-                        <img src="logo_fintech.png" alt="Logo FinTech" class="h-14 w-auto object-contain">
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-8 h-8 bg-amber-100 rounded-md flex items-center justify-center text-bam-gold font-bold text-sm mb-3">B</div>
+                        <h4 class="font-bold text-lg text-gray-900 mb-2" data-lang-fr="Écosystème FinTech" data-lang-en="FinTech Ecosystem">Écosystème FinTech</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed" data-lang-fr="Cartographie et observation des solutions innovantes développées par les startups et acteurs financiers." data-lang-en="Mapping and observation of innovative solutions developed by startups and financial actors.">Cartographie et observation des solutions innovantes développées par les startups et acteurs financiers.</p>
                     </div>
-                    <span class="text-base font-bold text-gray-700">Morocco Fintech Center</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-8 h-8 bg-purple-100 rounded-md flex items-center justify-center text-bam-violet font-bold text-sm mb-3">C</div>
+                        <h4 class="font-bold text-lg text-gray-900 mb-2" data-lang-fr="Impacts Réglementaires" data-lang-en="Regulatory Impacts">Impacts Réglementaires</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed" data-lang-fr="Analyse prospective des impacts des technologies de rupture sur les cadres de régulation nationaux." data-lang-en="Prospective analysis of the impacts of disruptive technologies on national regulatory frameworks.">Analyse prospective des impacts des technologies de rupture sur les cadres de régulation nationaux.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6. ÉVÉNEMENTS -->
     <section id="evenements" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -189,7 +196,6 @@
         </div>
     </section>
 
-    <!-- 7. CONTACT -->
     <section id="contact" class="py-24 bg-gray-50 border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16">
@@ -237,9 +243,8 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="bg-bam-violet text-gray-400 py-8 border-t border-purple-950 text-center text-sm">
-        <p>&copy; 2026 Bank Al-Maghrib - Département Stratégie, Transformation & Innovation. Tous droits réservés.</p>
+        <p>© 2026 Bank Al-Maghrib - Département Stratégie, Transformation & Innovation. Tous droits réservés.</p>
     </footer>
 
     <script>
